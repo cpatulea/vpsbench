@@ -37,6 +37,12 @@ Dedicated (for comparison):
 
 Benchmarks
 ----------
+
+Synthetic:
 * Check http://lbs.sourceforge.net/
 * Unixbench
 * Bonnie++
+
+Real:
+* Requests per second with siege on loopback against some well known
+  open source software for rails, django, php.
