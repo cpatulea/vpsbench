@@ -42,6 +42,7 @@ Synthetic:
 * Check http://lbs.sourceforge.net/
 * Unixbench
 * Bonnie++
+* redis-benchmark
 
 Real:
 * Requests per second with siege on loopback against some well known
