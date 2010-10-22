@@ -1,0 +1,42 @@
+Starting fresh for version 2 of the VPS benchmark
+=================================================
+
+Discussion of previous benchmarks
+---------------------------------
+
+* http://news.ycombinator.com/item?id=966555
+* http://www.reddit.com/r/programming/comments/a98a4/performance_comparison_between_ec2_slicehost/
+* http://www.reddit.com/r/linux/comments/a98ab/performance_comparison_between_ec2_slicehost/
+
+Contenders
+----------
+
+* Rackspace Cloud 512MB
+* Linode 512MB
+* EC2 Micro 613MB (http://aws.amazon.com/free/)
+* Prgmr 1024MB
+
+Maybe:
+* Rimuhosting (pricy?)
+* Zerigo (pricy?)
+* Gandhi (pricy?)
+* ChunkHost (US-only)
+* DynDNS (pricy?)
+* VPS.net (pricy?)
+* asmallorange.com (pricy?)
+
+Contacted me:
+* networkredux.com (no small instance)
+* contegix.com (pricy?)
+* stormondemand.com (no small instance)
+* joyent.com (pricy?)
+
+Dedicated (for comparison):
+* http://www.hetzner.de/en/hosting/produktmatrix/rootserver-produktmatrix-eq/
+* https://corenetworks.net/dedicated/
+
+Benchmarks
+----------
+* Check http://lbs.sourceforge.net/
+* Unixbench
+* Bonnie++
