@@ -9,12 +9,6 @@ from glob import glob
 from GChartWrapper import Line
 
 HOSTS = (
-    ('opal.redflavor.com', 'Slicehost'),
-    ('garnet.redflavor.com', 'Prgmr'),
-    ('topaz.redflavor.com', 'Linode x86_64'),
-    ('amethyst.redflavor.com', 'Linode i686'),
-    ('onyx.redflavor.com', 'Amazon'),
-    ('beryl.redflavor.com', 'Rackspace'),
 )
 
 def parse_benchmark_logs():
@@ -25,9 +19,6 @@ def parse_benchmark_logs():
     django_re = re.compile("^Ran \d{3} tests in ([\d.]+)s")
 
     tests = [
-        ('django_sqlite3_test', django_re),
-        ('django_pgsql_test', django_re),
-        ('pgsql_mysql_benchmark', re.compile("^TOTALS\s+([\d.]+)")),
         ('unix_benchmark', re.compile("Index Score\s+([\d.]+)")),
     ]
 
@@ -159,9 +150,6 @@ def table(results):
     sorted_tests = [
         'unix_benchmark_single',
         'unix_benchmark_multiple',
-        'pgsql_mysql_benchmark',
-        'django_pgsql_test',
-        'django_sqlite3_test',
     ]
     output = []
     output.append("  <tr>")
