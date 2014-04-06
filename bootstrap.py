@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if "--all" in sys.argv:
         u_dir = "unixbench-5.1.2"
         if not os.path.isdir(u_dir):
-            u = "http://www.hermit.org/Linux/Benchmarking/unixbench-5.1.2.tar.gz"
+            u = "https://byte-unixbench.googlecode.com/files/unixbench-5.1.2.tar.gz"
             cmd = "wget %s && tar xzf %s.tar.gz && " + \
                   "patch -p0 -i %s.patch && cd %s && make all"
             os.system(cmd % (u, u_dir, u_dir, u_dir))
